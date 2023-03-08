@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+</head>
+
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form content">
+                <form action="{% url 'login' %}" method="POST" onsubmit="login()">
+                    {% csrf_token %}
+                    <div class="field input field">
+                        <input type="email" placeholder="Email or phone number" name='email'>
+                    </div>
+
+                    <div class="field input field">
+                        <input type="password" placeholder="Password" name='password'>
+                    </div>
+
+                    <div class="field button1-field">
+                        <button type="submit">Log In</button>
+                    </div>
+
+                    <hr />
+
+                    <div class="field button2-field">
+                        <button type="submit">Create new account</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="tx">
+            <p><a>Create a Page</a> for a celebrity, brand or business.</p>
+        </div>
+    </section>
+</body>
+
+</html>
