@@ -61,8 +61,10 @@
                 </div>
             </div>
 
+            {% for post in posts %}
+
             <div class="friends_post">
-                {% for post in posts %}
+
                 <div class="friend_post_top">
 
                     <div class="img_and_name">
@@ -103,10 +105,10 @@
                         <input type="text" placeholder="コメントを入力...">
                     </div>
                 </div>
-
-                {% endfor %}
-
             </div>
+
+            {% endfor %}
+
         </div>
 
         <!--right-->
@@ -117,38 +119,35 @@
 
             <div class="contact">
                 <img src="{% static 'img/contact.jpeg' %}">
-                <p>Em be1</p>
+                <p>Name1</p>
             </div>
 
             <div class="contact">
                 <img src="{% static 'img/contact.jpeg' %}">
-                <p>Em be2</p>
+                <p>Name2</p>
             </div>
 
             <div class="contact">
                 <img src="{% static 'img/contact.jpeg' %}">
-                <p>Em be3</p>
+                <p>Name3</p>
             </div>
 
             <div class="contact">
                 <img src="{% static 'img/contact.jpeg' %}">
-                <p>Em be4</p>
+                <p>Name4</p>
             </div>
 
             <div class="contact">
                 <img src="{% static 'img/contact.jpeg' %}">
-                <p>Em be5</p>
+                <p>Name5</p>
             </div>
-
-
-
-
-
         </div>
 
     </div>
     </div>
+
     <script src="{% static 'home.js' %}"> </script>
+
 </body>
 
 </html>

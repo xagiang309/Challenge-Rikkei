@@ -17,21 +17,21 @@
                 <form action="{% url 'login' %}" method="POST" onsubmit="login()">
                     {% csrf_token %}
                     <div class="field input field">
-                        <input type="email" placeholder="Email or phone number" name='email'>
+                        <input type="email" placeholder="メールアドレスまたは携帯電話番号" name='email'>
                     </div>
 
                     <div class="field input field">
-                        <input type="password" placeholder="Password" name='password'>
+                        <input type="password" placeholder="パスワード" name='password'>
                     </div>
 
                     <div class="field button1-field">
-                        <button type="submit">Log In</button>
+                        <button type="submit">ログイン</button>
                     </div>
 
                     <hr />
 
                     <div class="field button2-field">
-                        <button type="submit">Create new account</button>
+                        <button type="submit">新しいアカウントを作成</button>
                     </div>
 
                 </form>
@@ -39,7 +39,7 @@
         </div>
 
         <div class="tx">
-            <p><a>Create a Page</a> for a celebrity, brand or business.</p>
+            <p><strong>Create a Page</strong> for a celebrity, brand or business.</p>
         </div>
     </section>
 </body>
