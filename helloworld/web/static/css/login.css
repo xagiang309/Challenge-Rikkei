@@ -58,6 +58,7 @@ form .field {
 
 .button2-field>button {
     height: 45px;
+    padding: 20px;
     background-color: #0ebd0e;
     border: none;
     border-radius: 6px;

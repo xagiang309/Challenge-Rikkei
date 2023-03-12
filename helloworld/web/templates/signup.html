@@ -15,7 +15,7 @@
         <form action="{% url 'signup' %}" method="POST" onsubmit="signup()">
             {% csrf_token %}
             <h2 class="first_title">登録</h2>
-            <p class="first_sub_title" id="sub_title">It's quick and easy.</p>
+            <p class="first_sub_title" id="sub_title">簡単に登録できます。</p>
             <hr />
 
             <div class="input">
@@ -26,7 +26,7 @@
                 <br />
                 <input type="password" placeholder="新しいパスワード" id="all1" name='password' required />
                 <br />
-                <input type="submit" value="登録" class="submit" />
+                <input type="submit" value="アカウント登録" class="submit" />
 
             </div>
         </form>
