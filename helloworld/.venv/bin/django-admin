@@ -1,4 +1,4 @@
-#!/Users/user/Documents/CHALLENGE-RIKKEI/helloworld/.venv/bin/python3
+#!/Users/user/Documents/CHALLENGE-RIKKEI/helloworld/.venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
